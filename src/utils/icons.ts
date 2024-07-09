@@ -1,0 +1,46 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faSliders,
+  faSearch,
+  faMap,
+  faGear,
+  faClose,
+  faUserGroup,
+  faMapPin,
+  faToolbox,
+  faDiamondTurnRight,
+  faCalendarPlus,
+  faUser,
+  faEdit,
+  faPeopleGroup,
+  faChevronUp,
+  faChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
+import { faBookmark as fullBookmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBookmark as hollowBookmark,
+  faClock,
+  faCalendarDays,
+} from "@fortawesome/free-regular-svg-icons";
+
+library.add(
+  faSliders,
+  faSearch,
+  faMap,
+  hollowBookmark,
+  fullBookmark,
+  faGear,
+  faClose,
+  faUserGroup,
+  faClock,
+  faCalendarDays,
+  faMapPin,
+  faToolbox,
+  faDiamondTurnRight,
+  faCalendarPlus,
+  faUser,
+  faEdit,
+  faPeopleGroup,
+  faChevronUp,
+  faChevronDown,
+);
