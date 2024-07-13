@@ -31,6 +31,7 @@ export default function useIndex() {
     },
     mifgashCardHeader: {
       flexDirection: "row",
+      justifyContent: "space-between",
       alignItems: "center",
       paddingTop: 6 * BASE_SIZE,
       paddingHorizontal: 6 * BASE_SIZE,
@@ -52,6 +53,15 @@ export default function useIndex() {
       fontWeight: "bold",
       fontSize: 6 * BASE_SIZE,
       marginHorizontal: 4 * BASE_SIZE,
+    },
+    upcomingStatusWrapper: {
+      borderRadius: 8 * BASE_SIZE,
+      paddingVertical: 2 * BASE_SIZE,
+      paddingHorizontal: 4 * BASE_SIZE,
+    },
+    upcomingStatus: {
+      fontSize: 6 * BASE_SIZE,
+      fontWeight: "bold",
     },
     mifgashCardMiddle: {
       flex: 1,

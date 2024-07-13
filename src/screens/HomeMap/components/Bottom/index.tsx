@@ -87,6 +87,7 @@ const Bottom: FC<Props> = ({
             category="Food & Drinks"
             time="26th June · 7PM"
             group="Eating out"
+            upcoming={true}
             categories={[
               "Food & Drinks",
               "Late night hangout",

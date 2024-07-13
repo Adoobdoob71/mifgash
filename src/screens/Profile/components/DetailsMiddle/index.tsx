@@ -40,15 +40,23 @@ const DetailsMiddle: FC<Props> = () => {
           contentContainerStyle={styles.profilePastMifgashimList}
           horizontal>
           <View style={{ width: 12 * BASE_SIZE }}></View>
-          {/* {[1, 2, 3, 4].map((item, index) => (
+          {[1, 2, 3, 4].map((item, index) => (
             <MifgashCard
               onPress={() => {}}
-              time="26th June · 7PM"
               title="Burger with friends!"
               category="Food & Drinks"
+              time="26th June · 7PM"
+              group="Eating out"
+              upcoming={false}
+              categories={[
+                "Food & Drinks",
+                "Late night hangout",
+                "Meeting friends",
+              ]}
+              location="Tel Aviv, Israel"
               style={{ marginEnd: 8 * BASE_SIZE }}
             />
-          ))} */}
+          ))}
         </ScrollView>
       </View>
     </View>

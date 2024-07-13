@@ -22,6 +22,7 @@ interface Props {
   group: string;
   location: string;
   categories: string[];
+  upcoming: boolean;
   style?: StyleProp<ViewStyle>;
 }
 
@@ -34,6 +35,7 @@ const MifgashCard: FC<Props> = ({
   group,
   location,
   categories,
+  upcoming,
 }) => {
   const { colors, styles, bookmarked, going, toggleBookmark } = useIndex();
 
@@ -64,6 +66,19 @@ const MifgashCard: FC<Props> = ({
             />
             <Text style={styles.mifgashGroupName}>{group}</Text>
           </Pressable>
+          <View
+            style={[
+              styles.upcomingStatusWrapper,
+              { backgroundColor: upcoming ? colors.primary : colors.cardColor },
+            ]}>
+            <Text
+              style={[
+                styles.upcomingStatus,
+                { color: upcoming ? colors.onPrimary : colors.text },
+              ]}>
+              {upcoming ? "Upcoming" : "Ended"}
+            </Text>
+          </View>
         </View>
         <View style={styles.mifgashCardMiddle}>
           <Text style={styles.mifgashCardTitle}>{title}</Text>

@@ -1,8 +1,9 @@
 import { FC } from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import useIndex from "./useIndex";
 import Button from "../../components/Button";
 import { useNavigation } from "@react-navigation/native";
+import SettingsTop from "./components/SettingsTop";
 
 interface Props {}
 
@@ -12,11 +13,8 @@ const Settings: FC<Props> = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.mainWrapper}>
-      <Button
-        mode="filled"
-        text="goooo"
-        onPress={() => navigation.navigate("ProfileScreen")}
-      />
+      <Text style={styles.settingsTitle}>Settings</Text>
+      <SettingsTop />
     </View>
   );
 };
