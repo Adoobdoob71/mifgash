@@ -19,7 +19,12 @@ const Option: FC<Props> = ({ icon, title, description, toggle, style }) => {
   return (
     <View style={[styles.optionWrapper, style]}>
       {icon && (
-        <FontAwesomeIcon icon={icon} color={colors.text} size={8 * BASE_SIZE} />
+        <FontAwesomeIcon
+          icon={icon}
+          color={colors.secondaryText}
+          size={8 * BASE_SIZE}
+          style={{ marginEnd: 8 * BASE_SIZE }}
+        />
       )}
       <View>
         <Text style={styles.optionTitle}>{title}</Text>

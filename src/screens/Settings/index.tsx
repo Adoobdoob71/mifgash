@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 import useIndex from "./useIndex";
 import Button from "../../components/Button";
 import { useNavigation } from "@react-navigation/native";
@@ -14,7 +14,9 @@ const Settings: FC<Props> = () => {
   return (
     <View style={styles.mainWrapper}>
       <Text style={styles.settingsTitle}>Settings</Text>
-      <SettingsTop />
+      <ScrollView contentContainerStyle={styles.settingsScrollView}>
+        <SettingsTop />
+      </ScrollView>
     </View>
   );
 };

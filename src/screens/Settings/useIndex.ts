@@ -12,13 +12,17 @@ export default function useIndex() {
     mainWrapper: {
       flex: 1,
       backgroundColor: colors.backgroundColor,
-      paddingTop: top,
+      paddingTop: top + 8 * BASE_SIZE,
     },
     settingsTitle: {
       color: colors.text,
       fontWeight: "bold",
       fontSize: 16 * BASE_SIZE,
       marginStart: 16 * BASE_SIZE,
+      marginBottom: 8 * BASE_SIZE,
+    },
+    settingsScrollView: {
+      paddingVertical: 8 * BASE_SIZE,
     },
   });
 

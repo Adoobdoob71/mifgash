@@ -16,6 +16,7 @@ export default function useIndex() {
       color: colors.text,
       fontWeight: "bold",
       fontSize: 8 * BASE_SIZE,
+      marginBottom: 1.5 * BASE_SIZE,
     },
     optionDescription: {
       color: colors.secondaryText,
