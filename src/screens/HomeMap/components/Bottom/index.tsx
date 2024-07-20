@@ -42,7 +42,7 @@ const Bottom: FC<Props> = ({
             <Text style={styles.headerTitle}>Mifgash</Text>
             <IconButton
               iconName="sliders"
-              onPress={toggleTheme}
+              onPress={() => {}}
               size={10 * BASE_SIZE}
               style={styles.filterButton}
             />

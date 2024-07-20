@@ -15,6 +15,8 @@ import {
   faPeopleGroup,
   faChevronUp,
   faChevronDown,
+  faChevronRight,
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { faBookmark as fullBookmark } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -43,4 +45,6 @@ library.add(
   faPeopleGroup,
   faChevronUp,
   faChevronDown,
+  faChevronRight,
+  faChevronLeft,
 );

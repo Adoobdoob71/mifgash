@@ -12,7 +12,6 @@ export default function MainNavigator() {
   const BottomNavigatorComponent = () => (
     <BottomNavigator bottomTabY={bottomTabY} />
   );
-  const ProfileScreen = () => <Profile />;
 
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -21,7 +20,7 @@ export default function MainNavigator() {
         component={BottomNavigatorComponent}
       />
       <Stack.Screen name="MifgashDetails" component={MifgashDetails} />
-      <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+      <Stack.Screen name="ProfileScreen" component={Profile} />
     </Stack.Navigator>
   );
 }

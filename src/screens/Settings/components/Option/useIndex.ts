@@ -10,7 +10,7 @@ export default function useIndex() {
       flexDirection: "row",
       alignItems: "center",
       paddingHorizontal: 12 * BASE_SIZE,
-      paddingVertical: 6 * BASE_SIZE,
+      marginBottom: 10 * BASE_SIZE,
     },
     optionTitle: {
       color: colors.text,

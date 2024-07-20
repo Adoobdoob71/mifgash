@@ -40,7 +40,6 @@ export default function useIndex(
       bottomTabY.value = withTiming(0, {
         duration: 300,
         easing: Easing.out(Easing.quad),
-        reduceMotion: ReduceMotion.System,
       });
       return;
     }
@@ -49,7 +48,6 @@ export default function useIndex(
       bottomTabY.value = withTiming(45 * BASE_SIZE, {
         duration: 300,
         easing: Easing.out(Easing.quad),
-        reduceMotion: ReduceMotion.System,
       });
     }
   };
